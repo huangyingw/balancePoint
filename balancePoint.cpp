@@ -1,7 +1,3 @@
-// 平衡点.cpp : 定义控制台应用程序的入口点。
-//
-
-#include "stdafx.h"
 #include<iostream>
 using namespace std;
 
@@ -27,7 +23,7 @@ int Equ(int *a,int length)
 	}
 }
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
 	int data[5]={3,5,8,-21,16};
 	cout<<Equ(data,5)<<endl;
