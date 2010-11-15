@@ -13,7 +13,7 @@ int sum(int *a,int left,int right)
   return result;
 }
 
-int Equ(int *a,int length)
+void Equ(int *a,int length)
 {
   int leftRes,righRes;
   for(int i=1;i<length-1;i++)
@@ -21,14 +21,18 @@ int Equ(int *a,int length)
     leftRes=sum(a,0,i-1);
     righRes=sum(a,i+1,length-1);
     if(leftRes==righRes)
-      return i;
+      balanceList.push_back(i);
   }
 }
 
 int main()
 {
   int data[5]={3,5,8,-21,16};
-  cout<<Equ(data,5)<<endl;
+  Equ(data,5);
+  for (list<int>::iterator iter = balanceList.begin(); iter != balanceList.end(); ++iter)
+    cout << *iter << " ";
+  cout << endl;
+
   return 0;
 }
 
