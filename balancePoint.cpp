@@ -32,7 +32,6 @@ int main()
   for (list<int>::iterator iter = balanceList.begin(); iter != balanceList.end(); ++iter)
     cout << *iter << " ";
   cout << endl;
-
   return 0;
 }
 
