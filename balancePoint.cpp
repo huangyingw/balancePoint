@@ -2,6 +2,7 @@
 #include <list>
 using namespace std;
 
+list<int> balanceList;
 int sum(int *a,int left,int right)
 {
   int result=0;
